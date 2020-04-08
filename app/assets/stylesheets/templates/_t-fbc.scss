@@ -1,0 +1,23 @@
+$header-height: 3.5rem;
+
+.t-fbc {
+padding-left: 4.5rem;
+}
+
+.t-fbc__header {
+  background-color: red;
+  height: $header-height;
+}
+
+.t-fbc__sidebar {
+  width: 4.5rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.t-fbc__main {
+  background-color: yellow;
+  min-height: calc(100vh - #{$header-height});
+}

@@ -1,0 +1,26 @@
+$block-height: 4.5rem !default
+
+.a-icon-block
+  height: $block-height
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  color: $reversal-text
+  padding: 0 .5rem
+  background-color: $primary
+  border-bottom: solid 1px rgba(black, .15)
+  transition: all .2s ease-out
+  &:hover
+    background-color: shade($primary, 12%)
+  i
+    font-size: 1.875rem
+    text-align: center
+    display: block
+  span
+    font-size: .625rem
+    line-height: 1.3
+    margin-top: .5em
+    margin-bottom: -.83em
+    text-align: center
+    display: block

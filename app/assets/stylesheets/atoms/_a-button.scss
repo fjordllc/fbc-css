@@ -1,0 +1,11 @@
+$font-size: 1.5rem;
+.a-button {
+  display: inline-flex;
+  font-size: $font-size;
+  background-color: blue;
+  padding: 1em;
+  color: white;
+  &.is-block {
+    display: flex;
+  }
+}

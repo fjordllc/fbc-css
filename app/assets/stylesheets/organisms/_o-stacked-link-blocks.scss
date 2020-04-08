@@ -1,0 +1,27 @@
+.o-stacked-link-blocks {
+  background-color: $main;
+  height: 100vh;
+}
+
+.o-stacked-link-blocks__item-link {
+  background-color: $main;
+  height: 4rem;
+  font-size: 1.75rem;
+  @include flex-center(column);
+  text-decoration: none;
+  color: white;
+  border-bottom: solid 1px rgba(white, .2);
+  transition: all .2s ease-out;
+  &:hover {
+    background-color: darken($main, 4%);
+  }
+}
+
+.o-stacked-link-blocks__item-icon {
+  font-size: 1em;
+}
+
+.o-stacked-link-blocks__item-label {
+  font-size: .35em;
+  margin-top: .375em;
+}
