@@ -49,3 +49,7 @@ As your site grows in size and complexity it usually requires more developers to
 - [gem](https://github.com/FortAwesome/font-awesome-sass)
 - [npm](https://www.npmjs.com/package/@fortawesome/fontawesome-free)
 - [alfred-font-awesome-workflow](https://github.com/ruedap/alfred-font-awesome-workflow)
+
+# display: flex
+
+- [FLEXBOX FROGGY](http://flexboxfroggy.com/#ja)

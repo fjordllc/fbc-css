@@ -4,56 +4,8 @@ html
   body
     .t-fbc
       header.t-fbc__header
+        = render "o_simple_header"
       main.t-fbc__main
         = yield
       .t-fbc__sidebar
-        nav.o-stacked-link-blocks
-          ul.o-stacked-link-blocks__items
-            li.o-stacked-link-blocks__item
-              = link_to "", class: "o-stacked-link-blocks__item-link" do
-                .o-stacked-link-blocks__item-icon
-                  i.fas.fa-home
-                .o-stacked-link-blocks__item-label
-                  | HOME
-            li.o-stacked-link-blocks__item
-              = link_to "", class: "o-stacked-link-blocks__item-link" do
-                .o-stacked-link-blocks__item-icon
-                  i.fas.fa-home
-                .o-stacked-link-blocks__item-label
-                  | HOME
-            li.o-stacked-link-blocks__item
-              = link_to "", class: "o-stacked-link-blocks__item-link" do
-                .o-stacked-link-blocks__item-icon
-                  i.fas.fa-home
-                .o-stacked-link-blocks__item-label
-                  | HOME
-            li.o-stacked-link-blocks__item
-              = link_to "", class: "o-stacked-link-blocks__item-link" do
-                .o-stacked-link-blocks__item-icon
-                  i.fas.fa-home
-                .o-stacked-link-blocks__item-label
-                  | HOME
-            li.o-stacked-link-blocks__item
-              = link_to "", class: "o-stacked-link-blocks__item-link" do
-                .o-stacked-link-blocks__item-icon
-                  i.fas.fa-home
-                .o-stacked-link-blocks__item-label
-                  | HOME
-            li.o-stacked-link-blocks__item
-              = link_to "", class: "o-stacked-link-blocks__item-link" do
-                .o-stacked-link-blocks__item-icon
-                  i.fas.fa-home
-                .o-stacked-link-blocks__item-label
-                  | HOME
-            li.o-stacked-link-blocks__item
-              = link_to "", class: "o-stacked-link-blocks__item-link" do
-                .o-stacked-link-blocks__item-icon
-                  i.fas.fa-home
-                .o-stacked-link-blocks__item-label
-                  | HOME
-            li.o-stacked-link-blocks__item
-              = link_to "", class: "o-stacked-link-blocks__item-link" do
-                .o-stacked-link-blocks__item-icon
-                  i.fas.fa-home
-                .o-stacked-link-blocks__item-label
-                  | HOME
+        = render "o_stacked_link_blocks"

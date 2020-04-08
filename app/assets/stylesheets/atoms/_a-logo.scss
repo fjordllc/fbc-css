@@ -1,0 +1,12 @@
+.a-logo {
+  font-family: 'Concert One', cursive;
+}
+
+.a-logo__link {
+  color: $main;
+  text-decoration: none;
+  transition: all .2s ease-out;
+  &:hover {
+    opacity: .7;
+  }
+}

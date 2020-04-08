@@ -1,0 +1,22 @@
+.o-simple-header {
+  height: inherit;
+}
+.o-simple-header__inner {
+  height: inherit;
+  padding: 0 2rem;
+  display: flex;
+}
+.o-simple-header__start {
+  flex: 0 0 20rem;
+  display: flex;
+  align-items: center;
+}
+.o-simple-header__end {
+  flex: 100;
+}
+
+.a-logo {
+  .o-simple-header & {
+    font-size: 2.25rem;
+  }
+}
