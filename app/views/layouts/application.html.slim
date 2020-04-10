@@ -2,6 +2,8 @@ doctype html
 html
   = render("head")
   body
+    = params[:layout]
+    = params[:layout_for_page]
     .t-fbc
       header.t-fbc__header
         = render "o_simple_header"

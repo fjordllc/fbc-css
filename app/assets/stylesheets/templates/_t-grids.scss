@@ -1,0 +1,12 @@
+.t-grids {
+  display: grid;
+  padding: 0 2rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    grid-column: $i span;
+  }
+}

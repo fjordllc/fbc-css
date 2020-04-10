@@ -17,6 +17,6 @@ $header-height: 3.5rem;
 }
 
 .t-fbc__main {
-  background-color: yellow;
+  background-color: $background;
   min-height: calc(100vh - #{$header-height});
 }

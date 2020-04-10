@@ -20,3 +20,23 @@
     font-size: 2.25rem;
   }
 }
+
+.m-horizontal-link-icons__items {
+  .o-simple-header & {
+    justify-content: flex-end;
+  }
+}
+
+.a-user-icon {
+  .o-simple-header & {
+    width: 2.75rem;
+  }
+}
+
+.m-horizontal-link-icons__item-link {
+  .o-simple-header & {
+    font-size: 1.5rem;
+    width: 2.75rem;
+    color: $main;
+  }
+}

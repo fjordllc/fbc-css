@@ -5,6 +5,12 @@
         = link_to "", class: "a-logo__link" do
           | SITE NAME
     .o-simple-header__end
-      .a-user-icon
-        = link_to "", class: "a-user-icon__link" do
-          = image_tag("https://i.gyazo.com/db8f2104347f7735cbf907f6491fe63e.jpg", class: "a-user-icon__image")
+      nav.m-horizontal-link-icons
+        ul.m-horizontal-link-icons__items
+          li.m-horizontal-link-icons__item
+            = link_to "", class: "m-horizontal-link-icons__item-link" do
+              .m-horizontal-link-icons__item-link-icon
+                i.fas.fa-bell
+          li.m-horizontal-link-icons__item
+            = link_to "", class: "m-horizontal-link-icons__item-link" do
+              = image_tag("https://i.gyazo.com/db8f2104347f7735cbf907f6491fe63e.jpg", class: "a-user-icon")

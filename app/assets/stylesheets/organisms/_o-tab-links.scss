@@ -1,0 +1,35 @@
+$gutter-width: .25rem;
+$background-color: #c5c5c5;
+
+.o-tab-links {
+  padding: .75rem 2rem 0;
+  background-color: $background-color;
+}
+
+.o-tab-links__items {
+  display: flex;
+  margin: 0 calc(#{$gutter-width} * -1);
+}
+
+.o-tab-links__item {
+  padding: 0 $gutter-width;
+}
+
+.o-tab-links__item-link {
+  @include flex-center;
+  height: 2.75rem;
+  padding: 0 1.5rem;
+  min-width: 9rem;
+  text-decoration: none;
+  background-color: darken($background-color, 5%);
+  color: darken($background-color, 25%);
+  transition: all .2s ease-out;
+  &:hover {
+    background-color: darken($background-color, 10%);
+  }
+  &.is-active {
+    background-color: $background;
+    color: $main;
+  }
+
+}

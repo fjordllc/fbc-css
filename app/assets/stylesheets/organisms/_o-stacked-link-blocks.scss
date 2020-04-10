@@ -15,6 +15,9 @@
   &:hover {
     background-color: darken($main, 4%);
   }
+  &.is-active {
+    background-color: $accent;
+  }
 }
 
 .o-stacked-link-blocks__item-icon {
