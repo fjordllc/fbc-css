@@ -29,6 +29,12 @@ As your site grows in size and complexity it usually requires more developers to
 - [BEM](http://getbem.com/)
 - [SMACCS](http://smacss.com/)
 
+## CSSフレームワーク他
+
+- [Bootstrap](https://getbootstrap.com/docs/4.4/getting-started/introduction/)
+- [Bulma](https://bulma.io/documentation)
+- [emma.css](https://github.com/ruedap/emma.css)
+
 # sass
 
 - [Sass Documentation](https://sass-lang.com/documentation)
@@ -46,12 +52,14 @@ As your site grows in size and complexity it usually requires more developers to
 - [色彩センスのいらない配色講座](https://www.slideshare.net/marippe/ss-9003317)
 - [ノンデザイナーズデザインブックを読み解く](https://speakerdeck.com/monoooki/read-a-non-designers-designbook)
 - [ズルいデザインテクニック](https://speakerdeck.com/ken_c_lo/zurui-design)
+- [https://terkel.jp/](https://terkel.jp/)
 
 # fontawesome
 
 - [gem](https://github.com/FortAwesome/font-awesome-sass)
 - [npm](https://www.npmjs.com/package/@fortawesome/fontawesome-free)
 - [alfred-font-awesome-workflow](https://github.com/ruedap/alfred-font-awesome-workflow)
+  - [Alfred](https://www.alfredapp.com/)
 
 # display: flex
 

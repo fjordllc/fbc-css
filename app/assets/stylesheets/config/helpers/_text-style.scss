@@ -1,0 +1,27 @@
+@mixin long-text-style {
+  h2 {
+    font-size: 1.25em;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 1.4em;
+  }
+
+  p {
+    font-size: 1em;
+    line-height: 2.0;
+    margin-bottom: 2.0em;
+  }
+
+  blockquote {
+    border-left: solid .5em black;
+  }
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+.is-long-style-text {
+  @include long-text-style;
+}
