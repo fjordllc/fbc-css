@@ -30,6 +30,7 @@ gem 'slim-rails'
 gem 'high_voltage'
 gem 'font-awesome-sass', '~> 5.12.0'
 gem 'autoprefixer-rails'
+gem 'rack-user_agent'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false

@@ -19,4 +19,5 @@ $header-height: 3.5rem;
 .t-fbc__main {
   background-color: $background;
   min-height: calc(100vh - #{$header-height});
+  padding: 1.5rem 2rem;
 }

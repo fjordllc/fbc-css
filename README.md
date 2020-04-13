@@ -45,6 +45,7 @@ As your site grows in size and complexity it usually requires more developers to
 - [HUE/360](https://hue360.herokuapp.com/)
 - [色彩センスのいらない配色講座](https://www.slideshare.net/marippe/ss-9003317)
 - [ノンデザイナーズデザインブックを読み解く](https://speakerdeck.com/monoooki/read-a-non-designers-designbook)
+- [ズルいデザインテクニック](https://speakerdeck.com/ken_c_lo/zurui-design)
 
 # fontawesome
 
@@ -55,3 +56,14 @@ As your site grows in size and complexity it usually requires more developers to
 # display: flex
 
 - [FLEXBOX FROGGY](http://flexboxfroggy.com/#ja)
+
+# display: grid
+
+- [CSS「display:grid;」便利すぎる！もう、Bootstrap不要？！](https://cruw.co.jp/blog/2018/07/css_grid/)
+
+# IEなど各ブラウザ対応
+
+- [rack-user_agent](https://github.com/k0kubun/rack-user_agent)
+- [autoprefixer](https://github.com/postcss/autoprefixer)
+- [autoprefixer-rails](https://github.com/ai/autoprefixer-rails)
+- [Autoprefixer CSS online](https://autoprefixer.github.io/)
