@@ -1,0 +1,27 @@
+$scopes: (down, up, only);
+
+@each $scope in $scopes {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @if $scope == down {
+      @include media-breakpoint-down(#{$breakpoint}) {
+        .is-hidden-#{$breakpoint}-down {
+          display: none;
+        }
+      }
+    }
+    @else if $scope == up {
+      @include media-breakpoint-up(#{$breakpoint}) {
+        .is-hidden-#{$breakpoint}-up {
+          display: none;
+        }
+      }
+    }
+    @else if $scope == only {
+      @include media-breakpoint-only(#{$breakpoint}) {
+        .is-hidden-#{$breakpoint}-only {
+          display: none;
+        }
+      }
+    }
+  }
+}

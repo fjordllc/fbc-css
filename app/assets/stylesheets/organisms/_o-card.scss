@@ -1,18 +1,15 @@
 .o-card {
   background-color: $base;
-  border: solid 1px #ccc;
+  border: solid 1px $border;
   &.is-danger {
     .o-card__title {
       color: $danger;
     }
   }
-  &.has-margin-bottom-160 {
-    margin-bottom: 10rem;
-  }
 }
 
 .o-card__header {
-  padding: 1rem;
+  padding: .75rem 1rem;
 }
 
 .o-card__title {
@@ -25,7 +22,9 @@
   font-size: 1rem;
   padding: 1rem;
   .o-card__header + & {
-    border-top: solid 1px #ccc;
+    border-top: solid 1px $border;
   }
-  @include long-text-style;
+  &.has-menu {
+    padding: 0;
+  }
 }

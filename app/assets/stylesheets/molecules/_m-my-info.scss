@@ -1,0 +1,22 @@
+.m-my-info {
+  display: flex;
+}
+
+.m-my-info__start {
+  flex: 0 0 6rem;
+  margin-right: 1.5rem;
+}
+
+.m-my-info__end {
+  flex: 100;
+}
+
+.m-names {
+  .m-my-info & {
+    font-size: 1.75rem;
+  }
+}
+
+.m-my-info__body {
+  margin-top: 1em;
+}

@@ -53,6 +53,7 @@ As your site grows in size and complexity it usually requires more developers to
 - [ノンデザイナーズデザインブックを読み解く](https://speakerdeck.com/monoooki/read-a-non-designers-designbook)
 - [ズルいデザインテクニック](https://speakerdeck.com/ken_c_lo/zurui-design)
 - [https://terkel.jp/](https://terkel.jp/)
+- [Onsen UI](https://ja.onsen.io/theme-roller/)
 
 # fontawesome
 
@@ -75,3 +76,38 @@ As your site grows in size and complexity it usually requires more developers to
 - [autoprefixer](https://github.com/postcss/autoprefixer)
 - [autoprefixer-rails](https://github.com/ai/autoprefixer-rails)
 - [Autoprefixer CSS online](https://autoprefixer.github.io/)
+
+# break points
+
+## bootstrap
+
+- [_breakpoints.scss](https://github.com/twbs/bootstrap/blob/master/scss/mixins/_breakpoints.scss)
+- [breakpoints](https://github.com/twbs/bootstrap/blob/master/scss/_variables.scss#L275)
+
+- xs... 0 〜 575px
+  - スマホ ポートレート
+- sm... 576px 〜 767px
+  - スマホ ランドスケープ
+- md... 768px 〜 991px
+  - タブレット ポートレート
+- lg... 992px 〜 1199px
+  - タブレット ランドスケープ
+- xl... 1200px 〜 1399px
+  - 小さいラップトップ
+- xxl... 1400px 〜 ∞
+  - PC
+
+```scss
+@include media-breakpoint-down(md) {
+  // md 以下
+  font-size: 3rem;
+}
+@include media-breakpoint-up(md) {
+  // md 以上
+  font-size: 3rem;
+}
+@include media-breakpoint-only(md) {
+  // md のみ
+  font-size: 3rem;
+}
+```

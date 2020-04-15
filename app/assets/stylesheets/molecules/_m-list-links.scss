@@ -1,0 +1,25 @@
+.m-list-links__item-link {
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: .5em 1em;
+  line-height: 1.4;
+  text-decoration: none;
+  background-color: $base;
+  .m-list-links__item:not(:last-child) & {
+    border-bottom: solid 1px $border;
+  }
+  .m-list-links.has-icon & {
+    position: relative;
+    padding-right: 1.75em;
+  }
+  span:first-child {
+    flex: 1;
+  }
+}
+
+.m-list-links__item-icon {
+  width: 1em;
+  height: 1em;
+  @include flex-center;
+}

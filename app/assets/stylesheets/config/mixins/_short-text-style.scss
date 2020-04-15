@@ -1,0 +1,16 @@
+@mixin short-text-style {
+  h2 {
+    font-size: 1.125em;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 1em;
+  }
+  p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+  }
+  *:last-child {
+    margin-bottom: 0;
+  }
+}

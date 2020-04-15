@@ -1,0 +1,30 @@
+.o-dropdown-nav {
+  border: solid 1px #ccc;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 14rem;
+  display: none;
+  input:checked + & {
+    display: block;
+  }
+}
+
+.o-dropdown-nav__overlay {
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.m-list-links {
+  .o-dropdown-nav & {
+    font-size: .875rem;
+    position: relative;
+    z-index: 4;
+  }
+}

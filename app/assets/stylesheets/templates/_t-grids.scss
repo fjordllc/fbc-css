@@ -4,6 +4,21 @@
   grid-gap: 1rem;
 }
 
-.col-6 {
-  grid-column: 6 span;
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    grid-column: $i span;
+  }
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-down(#{$breakpoint}) {
+      .col-#{$breakpoint}-#{$i} {
+        grid-column: $i span;
+      }
+    }
+  }
+}
+
+.o-card {
+  .t-grids & {
+    height: 100%;
+  }
 }

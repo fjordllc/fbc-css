@@ -12,5 +12,8 @@
               .m-horizontal-link-icons__item-link-icon
                 i.fas.fa-bell
           li.m-horizontal-link-icons__item
-            = link_to "", class: "m-horizontal-link-icons__item-link" do
-              = image_tag("https://i.gyazo.com/db8f2104347f7735cbf907f6491fe63e.jpg", class: "a-user-icon")
+            .m-horizontal-link-icons__item-link
+              label.m-horizontal-link-icons__item-label(for="show-user-nav")
+                = image_tag("https://i.gyazo.com/db8f2104347f7735cbf907f6491fe63e.jpg", class: "a-user-icon")
+              input.a-toggle-checkbox#show-user-nav type="checkbox"
+              = render "o_dropdown_nav"

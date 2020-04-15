@@ -1,25 +1,17 @@
-.t-grids
-  .t-grids__item.col-xs-12.col-sm-10.col-md-6.col-lg-3.col-xl-4.col-xxl-3
-    .o-card
-      .o-card__body
-        = render "my_info"
-
-  .t-grids__item.col-6
-    = render "o_card", title: "カードのタイトルあああああ" do
-      .m-long-text
+.m-my-info
+  .m-my-info__start
+    = image_tag("https://i.gyazo.com/db8f2104347f7735cbf907f6491fe63e.jpg", class: "a-user-icon")
+  .m-my-info__end
+    header.m-names
+      h2.m-names__name
+        | 名字 名前
+      .m-names__kana
+        | ふりがな ふりがな
+    .m-my-info__body
+      .m-short-text
         p
           | どんな小さな羽さえもそよがぬ 弱い息のお話をせがむとは！でもこの哀れな声一つ三つあわせた舌に逆らえましょうか？居丈だかなプリマがまずは唱えるその宣告は「おはじめなさい」すこし優しげに二番手の希望
         p
           | どんな小さな羽さえもそよがぬ 弱い息のお話をせがむとは！でもこの哀れな声一つ三つあわせた舌に逆らえましょうか？居丈だかなプリマがまずは唱えるその宣告は「おはじめなさい」すこし優しげに二番手の希望
-        h2
-          | 見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し見出し
         p
           | どんな小さな羽さえもそよがぬ 弱い息のお話をせがむとは！でもこの哀れな声一つ三つあわせた舌に逆らえましょうか？居丈だかなプリマがまずは唱えるその宣告は「おはじめなさい」すこし優しげに二番手の希望
-        p
-          | どんな小さな羽さえもそよがぬ 弱い息のお話をせがむとは！でもこの哀れな声一つ三つあわせた舌に逆らえましょうか？居丈だかなプリマがまずは唱えるその宣告は「おはじめなさい」すこし優しげに二番手の希望
-
-  .t-grids__item.col-3
-    = render "menu"
-
-  .t-grids__item.col-3
-    = render "form"

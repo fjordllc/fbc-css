@@ -1,11 +1,17 @@
 $font-size: 1.5rem;
 .a-button {
+  border-radius: .25rem;
   display: inline-flex;
+  @include flex-center;
+  text-align: center;
   font-size: $font-size;
-  background-color: blue;
   padding: 1em;
   color: white;
+  cursor: pointer;
   &.is-block {
     display: flex;
+  }
+  &.is-primary {
+    background-color: blue;
   }
 }
