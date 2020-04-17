@@ -54,6 +54,7 @@ As your site grows in size and complexity it usually requires more developers to
 - [ズルいデザインテクニック](https://speakerdeck.com/ken_c_lo/zurui-design)
 - [https://terkel.jp/](https://terkel.jp/)
 - [Onsen UI](https://ja.onsen.io/theme-roller/)
+- [シンプルなRailsアプリケーションに一匙加えるちょい足しアニメーションレシピ](https://speakerdeck.com/is8r/sinpurunarailsapurikesiyonni-chi-jia-erutiyoizu-sianimesiyonresipi)
 
 # fontawesome
 

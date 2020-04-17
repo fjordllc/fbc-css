@@ -7,14 +7,16 @@
       .m-user-form__items
         .m-user-form__item
           label.a-form-label
-            | ラベルああああああ
+            | 必須ラベルああああああ
+            span.a-form-label__require-mark
+              | 必須
           input.a-text-input(type="text")
           .a-form-help
             | ヘルプ文章あああああああああああ
         .m-user-form__item
           label.a-form-label
             | ラベルああああああ
-          textarea.a-text-input
+          textarea.a-text-input.is-md
           .a-form-help
             | ヘルプ文章あああああああああああ
         .m-user-form__item
@@ -32,54 +34,101 @@
           .m-check-list
             .m-check-list__items
               .m-check-list__item
-                .a-checkbox
+                label.a-checkbox
                   input.a-checkbox__input(type="checkbox")
                   span.a-checkbox__label
                     | チェックボックス
               .m-check-list__item
-                .a-checkbox
+                label.a-checkbox
                   input.a-checkbox__input(type="checkbox")
                   span.a-checkbox__label
                     | チェックボックス
               .m-check-list__item
-                .a-checkbox
+                label.a-checkbox
                   input.a-checkbox__input(type="checkbox")
                   span.a-checkbox__label
                     | チェックボックス
               .m-check-list__item
-                .a-checkbox
+                label.a-checkbox
                   input.a-checkbox__input(type="checkbox")
                   span.a-checkbox__label
                     | チェックボックス
+
+        .m-user-form__item
+          label.a-form-label
+            | ラベルああああああ
+          .m-check-list.is-inline
+            .m-check-list__items
+              .m-check-list__item
+                label.a-checkbox
+                  input.a-checkbox__input(type="checkbox")
+                  span.a-checkbox__label
+                    | ああああ
+              .m-check-list__item
+                label.a-checkbox
+                  input.a-checkbox__input(type="checkbox")
+                  span.a-checkbox__label
+                    | ああああ
+              .m-check-list__item
+                label.a-checkbox
+                  input.a-checkbox__input(type="checkbox")
+                  span.a-checkbox__label
+                    | ああああ
+              .m-check-list__item
+                label.a-checkbox
+                  input.a-checkbox__input(type="checkbox")
+                  span.a-checkbox__label
+                    | ああああ
+              .m-check-list__item
+                label.a-checkbox
+                  input.a-checkbox__input(type="checkbox")
+                  span.a-checkbox__label
+                    | ああああ
+              .m-check-list__item
+                label.a-checkbox
+                  input.a-checkbox__input(type="checkbox")
+                  span.a-checkbox__label
+                    | ああああ
+
+
         .m-user-form__item
           label.a-form-label
             | ラベルああああああ
           .m-check-list
             .m-check-list__items
               .m-check-list__item
-                .a-checkbox
+                label.a-checkbox.is-radio
                   input.a-checkbox__input(type="radio")
                   span.a-checkbox__label
                     | ラジオボタン
               .m-check-list__item
-                .a-checkbox
+                label.a-checkbox.is-radio
                   input.a-checkbox__input(type="radio")
                   span.a-checkbox__label
                     | ラジオボタン
               .m-check-list__item
-                .a-checkbox
+                label.a-checkbox.is-radio
                   input.a-checkbox__input(type="radio")
                   span.a-checkbox__label
                     | ラジオボタン
               .m-check-list__item
-                .a-checkbox
+                label.a-checkbox.is-radio
                   input.a-checkbox__input(type="radio")
                   span.a-checkbox__label
                     | ラジオボタン
-      .m-user-form__actions
+      //
+        .m-user-form__actions
+          .m-user-form__actions-item
+            .a-button.is-primary.is-block
+              | 送信
+          .m-user-form__actions-item
+            .a-button.is-primary.is-block
+              | キャンセル
+
+      .m-user-form__actions.is-inline
         .m-user-form__actions-item
-          .a-button.is-primary.is-block
+          .a-button.is-primary.is-block.is-xl
             | 送信
         .m-user-form__actions-item
-          .a-button.is-primary.is-block
+          .a-button.is-danger.is-block.is-xl
             | キャンセル

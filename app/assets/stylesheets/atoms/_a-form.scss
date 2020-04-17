@@ -2,6 +2,21 @@
   line-height: 1.4;
   font-weight: 600;
   display: block;
+  &.is-required {
+    &::after {
+      content: "※";
+      font-weight: 400;
+      color: $danger;
+      position: relative;
+      top: -.5em;
+    }
+  }
+}
+
+.a-form-label__require-mark {
+  font-size: .625em;
+  font-weight: 400;
+  color: $danger;
 }
 
 .a-text-input {
@@ -11,17 +26,145 @@
   width: 100%;
   min-height: 2.25rem;
   padding: .5em;
+  border-radius: 4px;
+  transition: all .2s ease-out;
+  &:focus {
+    border-color: $primary;
+    box-shadow: 0 0 3px rgba($primary, .6);
+  }
 }
 
+textarea.a-text-input {
+  &.is-xs {}
+  &.is-sm {}
+  &.is-md {
+    height: 15rem
+  }
+  &.is-lg {}
+  &.is-xl {}
+  &.is-h-240px-md-up {
+    @include media-breakpoint-up(md) {
+      height: 240px;
+    }
+  }
+  &.is-h-120px-sm-down {
+    @include media-breakpoint-down(sm) {
+      height: 120px;
+    }
+  }
+}
 
 .a-form-select {
   border: solid 1px $border;
   display: block;
   width: 100%;
   height: 2.25rem;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: $base;
+  position: relative;
+  transition: all .2s ease-out;
   select {
     width: 100%;
     height: 100%;
     padding: .5em;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+  }
+  &::after {
+    content: "\f0d7";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    @include flex-center;
+    width: 2em;
+
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+  }
+  &:hover {
+    border-color: $primary;
+  }
+}
+
+.a-form-help {
+  line-height: 1.5;
+  color: $muted-text;
+}
+
+.a-checkbox {
+  padding-left: 1.125em;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+  input {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+
+.a-checkbox__label {
+  line-height: 1.4;
+  &::before {
+    content: "";
+    width: .75em;
+    height: .75em;
+    border: solid 1px $border;
+    display: block;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    top: .25em;
+    transition: all .2s ease-out;
+  }
+  .a-checkbox.is-radio &::before {
+    border-radius: 50%;
+  }
+  input:checked + &::before {
+    background-color: $primary;
+    border-color: $primary;
+  }
+  .a-checkbox.is-radio input:checked + &::before {
+    background-color: $primary;
+    border: solid 2px $base;
+    box-shadow: 0 0 0 1px $primary;
+  }
+  &::after {
+    content: "\f00c";
+    width: .75em;
+    height: .75em;
+    position: absolute;
+    left: .125em;
+    top: .4375em;
+    font-size: .75em;
+    @include flex-center;
+    opacity: 0;
+    color: $reversal-text;
+    transition: all .2s ease-out;
+
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+  }
+  input:checked + &::after {
+    opacity: 1;
+  }
+  .a-checkbox.is-radio &::after {
+    content: none;
   }
 }

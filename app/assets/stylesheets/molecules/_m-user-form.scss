@@ -1,5 +1,45 @@
+.m-user-form {
+  font-size: 1rem;
+}
+
+.m-user-form__items {
+  margin-bottom: 1.5rem;
+}
+
 .m-user-form__item {
   &:not(:last-child) {
     margin-bottom: 1.5rem;
+  }
+}
+
+.a-form-label {
+  .m-user-form & {
+    font-size: .875rem;
+    margin-bottom: .25em;
+  }
+}
+
+.a-form-help {
+  .m-user-form & {
+    font-size: .8125rem;
+    margin-top: .25em;
+  }
+}
+
+.m-user-form__actions-item {
+  &:not(:last-child) {
+    margin-bottom: .75rem;
+  }
+}
+
+.m-user-form__actions.is-inline {
+  display: flex;
+  margin: 0 -.5em;
+}
+
+.m-user-form__actions-item {
+  .m-user-form__actions.is-inline & {
+    flex: 1;
+    padding: 0 .5em;
   }
 }

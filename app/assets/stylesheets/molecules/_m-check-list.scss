@@ -1,0 +1,14 @@
+.m-check-list__items {
+  .m-check-list.is-inline & {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -.5em -.25em;
+  }
+}
+
+.m-check-list__item {
+  .m-check-list.is-inline & {
+    padding: 0 .5em;
+    margin-bottom: .25em;
+  }
+}

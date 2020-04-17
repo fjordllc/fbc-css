@@ -1,17 +1,48 @@
-$font-size: 1.5rem;
 .a-button {
   border-radius: .25rem;
   display: inline-flex;
   @include flex-center;
   text-align: center;
-  font-size: $font-size;
   padding: 1em;
   color: white;
   cursor: pointer;
+
   &.is-block {
     display: flex;
   }
+
   &.is-primary {
-    background-color: blue;
+    background-color: $primary;
+  }
+  &.is-secondary {
+    background-color: $secondary;
+  }
+  &.is-warning {
+    background-color: $warning;
+  }
+  &.is-danger {
+    background-color: $danger;
+  }
+  &.is-info {
+    background-color: $info;
+  }
+  &.is-success {
+    background-color: $success;
+  }
+
+  &.is-xs {
+    font-size: .75rem;
+  }
+  &.is-sm {
+    font-size: .8125rem;
+  }
+  &.is-md {
+    font-size: .875rem;
+  }
+  &.is-lg {
+    font-size: 1rem;
+  }
+  &.is-xl {
+    font-size: 1.25rem;
   }
 }
